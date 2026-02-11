@@ -1,0 +1,60 @@
+name: drowsiness_monitor
+description: Drowsiness & Distraction Monitor - Professional mobile app for driver safety monitoring
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.3.0
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  
+  # Camera & ML
+  camera: ^0.11.0
+  google_mlkit_face_detection: ^0.11.0
+  image: ^4.1.4
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Audio & TTS
+  flutter_tts: ^4.0.2
+  just_audio: ^0.9.36
+  
+  # Storage & Utils
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
+  wakelock_plus: ^1.2.8
+  vibration: ^2.0.1
+  
+  # Charts & Visualization
+  fl_chart: ^0.66.0
+  
+  # Notifications
+  flutter_local_notifications: ^17.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/models/
+    - assets/sounds/
+    - assets/animations/
+    - assets/images/
